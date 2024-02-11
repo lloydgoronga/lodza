@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lloyd Goronga - Personal Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+        }
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .interests {
+            margin-top: 20px;
+        }
+        .interests h2 {
+            color: #4CAF50;
+        }
+        .interests ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .interests ul li {
+            margin-bottom: 5px;
+        }
+        .graphics {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .graphics img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 20px;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        .fade-in {
+            animation: fadeInAnimation 2s ease-in-out forwards;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Lloyd Goronga's Personal Webpage</h1>
+        <p>Hello, I'm Lloyd Goronga, a passionate Master's student studying Operations Research and Statistics. My interests lie in construction and property management, and I aspire to start a company that utilizes the latest technology and materials in construction, prefabs, and smart homes.</p>
+        
+        <div class="interests">
+            <h2>Interests:</h2>
+            <ul>
+                <li>Technology and gadgets</li>
+                <li>Cars</li>
+                <li>Mansions</li>
+                <li>Operations Research and Statistics</li>
+                <li>Construction and property management</li>
+            </ul>
+        </div>
+
+        <p>Feel free to reach out to me at lloydgoronga2021@gmail.com.</p>
+
+        <div class="graphics">
+            <h2>Gallery:</h2>
+            <img class="fade-in" src="construction.jpeg" alt="Construction">
+            <img class="fade-in" src="smart_home.jpeg" alt="Smart Home">
+            <img class="fade-in" src="cars.jpeg" alt="Cars">
+            <img class="fade-in" src="mansion.jpeg" alt="Mansion">
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for fading in images
+        document.addEventListener("DOMContentLoaded", function() {
+            const images = document.querySelectorAll('.fade-in');
+            images.forEach((image) => {
+                image.style.opacity = '1';
+            });
+        });
+    </script>
+</body>
+</html>
