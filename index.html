@@ -64,9 +64,47 @@
                 opacity: 1;
             }
         }
+        /* Add styles for the menu bar */
+        .menu {
+            background-color: #4CAF50;
+            overflow: hidden;
+            position: fixed; /* Fix the menu at the top */
+            width: 100%; /* Make the menu full width */
+            top: 0;
+            z-index: 100; /* Ensure the menu stays on top of other elements */
+        }
+        .menu a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .menu a:hover {
+            background-color: #3e8e41;
+        }
+        /* Add some padding at the top of the page to prevent content from being hidden by the fixed menu */
+        body {
+            padding-top: 50px;
+        }
+        /* Responsive design for smaller screens */
+        @media screen and (max-width: 600px) {
+            .menu a {
+                float: none;
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
+    <!-- Add the menu bar -->
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="interests.html">Interests</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </div>
     <div class="container">
         <h1>Welcome to Lloyd Goronga's Personal Webpage</h1>
         <p>Hello, I'm Lloyd Goronga, a passionate Master's student studying Operations Research and Statistics. My interests lie in construction and property management, and I aspire to start a company that utilizes the latest technology and materials in construction, prefabs, and smart homes.</p>
