@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Include the same meta tags and title structure -->
+    <!-- Include the same CSS here -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+        }
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .interests {
+            margin-top: 20px;
+        }
+        .interests h2 {
+            color: #4CAF50;
+        }
+        .interests ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .interests ul li {
+            margin-bottom: 5px;
+        }
+        .graphics {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .graphics img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 20px;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        .fade-in {
+            animation: fadeInAnimation 2s ease-in-out forwards;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        /* Add styles for the menu bar */
+        .menu {
+            background-color: #4CAF50;
+            overflow: hidden;
+            position: fixed; /* Fix the menu at the top */
+            width: 100%; /* Make the menu full width */
+            top: 0;
+            z-index: 100; /* Ensure the menu stays on top of other elements */
+        }
+        .menu a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .menu a:hover {
+            background-color: #3e8e41;
+        }
+        /* Add some padding at the top of the page to prevent content from being hidden by the fixed menu */
+        body {
+            padding-top: 50px;
+        }
+        /* Responsive design for smaller screens */
+        @media screen and (max-width: 600px) {
+            .menu a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Include the same menu bar here -->
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="interests.html">Interests</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div class="container">
+        <h1>Contact Me</h1>
+        <!-- Include your contact information here -->
+	 <p>Feel free to reach out to me at lloydgoronga2021@gmail.com.</p>
+    </div>
+    <!-- Include the same gallery and JavaScript here -->
+</body>
+</html>
